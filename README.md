@@ -4,6 +4,8 @@ A now-playing display and remote control for [pear-desktop](https://github.com/p
 
 ![Device running the now-playing UI](assets/device.jpg)
 
+![Queue screen](assets/queue.jpg)
+
 ## Features
 
 - Title / artist, album art, and playback position, updated in real time over the `api-server` websocket (no polling)
