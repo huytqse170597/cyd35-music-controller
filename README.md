@@ -1,6 +1,6 @@
 # CYD 3.5" Now-Playing Controller
 
-A now-playing display and touch remote for [pear-desktop](https://github.com/pear-devs/pear-desktop)'s `api-server` plugin, running on a 3.5" **ESP32-3248S035R** "Cheap Yellow Display" (ST7796 SPI panel + XPT2046 resistive touch).
+A now-playing display and touch remote for [pear-desktop](https://github.com/huytqse170597/pear-desktop)'s `api-server` plugin, running on a 3.5" **ESP32-3248S035R** "Cheap Yellow Display" (ST7796 SPI panel + XPT2046 resistive touch).
 
 Album art, title, artist, and progress update live over a single WebSocket — the device never polls, and never fetches or resizes artwork itself.
 
@@ -39,7 +39,9 @@ Album art, title, artist, and progress update live over a single WebSocket — t
 
 ## Setup
 
-**Requirements:** [pear-desktop](https://github.com/pear-devs/pear-desktop) with the **api-server** plugin enabled (Options → Plugins → API Server) and reachable over Wi-Fi, plus [PlatformIO](https://platformio.org/) (CLI or VS Code extension).
+**Requirements:** [pear-desktop](https://github.com/huytqse170597/pear-desktop) with the **api-server** plugin enabled (Options → Plugins → API Server) and reachable over Wi-Fi, plus [PlatformIO](https://platformio.org/) (CLI or VS Code extension).
+
+> This device targets [**this pear-desktop fork**](https://github.com/huytqse170597/pear-desktop) — it relies on the `/api/v1/queue/list` endpoint and the like-toggle behaviour added there, which upstream doesn't have yet.
 
 1. Copy the secrets template and fill in your Wi-Fi and api-server details:
    ```bash
